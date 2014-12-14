@@ -1,0 +1,10 @@
+[Unit]
+Description=Run wonderful_bing every day
+
+[Timer]
+OnBootSec=10min
+OnCalendar=daily
+Unit=wonderful_bing.service
+
+[Install]
+WantedBy=default.target

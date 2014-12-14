@@ -1,0 +1,8 @@
+[Unit]
+Description=A python script using requests to download pictures from Bing and then set as wallpaper
+
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/wonderful_bing -d /path/to/save/pictures/
